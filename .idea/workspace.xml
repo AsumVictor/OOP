@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0204bcb9-1ebc-45c4-86df-d70cae7e6e8c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Lab1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab01.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/BetterLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/CourseGrade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/ExampleMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/SimpleArray.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/SimpleIf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/SimpleList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/SimpleLoop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/TestCases.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab2/part2/Applicant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab2/part2/TestCases.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="showPreview" value="true" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2mD61yICpZJxbKxWu3RotWhYIgs" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Lab01.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.TestCases.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/AiAsum/IdeaProjects/Lab1/src/Lab2/part2",
+    "onboarding.tips.debug.path": "C:/Users/AiAsum/IdeaProjects/Lab1/src/Main.java"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\AiAsum\IdeaProjects\Lab1\src\Lab2\part2" />
+      <recent name="C:\Users\AiAsum\IdeaProjects\Lab1\src\Lab2\part1" />
+      <recent name="C:\Users\AiAsum\IdeaProjects\Lab1\src\Lab2" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AiAsum\IdeaProjects\Lab1\src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Lab01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Lab01" />
+      <module name="Lab1" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Lab01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0204bcb9-1ebc-45c4-86df-d70cae7e6e8c" name="Changes" comment="" />
+      <created>1726598591860</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1726598591860</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Lab2/part2/TestCases.java</url>
+          <line>35</line>
+          <properties class="Lab2.part2.TestCases" method="testGetGrades">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
