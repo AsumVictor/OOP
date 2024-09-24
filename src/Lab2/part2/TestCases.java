@@ -102,9 +102,9 @@ public class TestCases {
               new CourseGrade("Non-CS GPA", 43)
       );
       Applicant testApplicant = new Applicant("Victor", grades);
-//      CourseGrade expected = grades.get(5);
-      IllegalArgumentException error = new IllegalArgumentException("Course not found: " + "Leadership");
-      assertEquals(error, testApplicant.getGradeFor("Leadership"));
+
+      String empty = null;
+      assertEquals(empty, testApplicant.getGradeFor("Leadership"));
    }
 
 

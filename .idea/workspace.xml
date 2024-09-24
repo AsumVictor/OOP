@@ -5,25 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0204bcb9-1ebc-45c4-86df-d70cae7e6e8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lab1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/BetterLoop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/CourseGrade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/ExampleMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/SimpleArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/SimpleIf.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/SimpleList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/SimpleLoop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab2/part1/TestCases.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab2/part2/Applicant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab2/part2/TestCases.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab2/part2/Applicant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab2/part2/Applicant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab2/part2/TestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab2/part2/TestCases.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +93,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>12</line>
+          <line>11</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">

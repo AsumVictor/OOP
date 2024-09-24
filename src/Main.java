@@ -10,6 +10,5 @@ public class Main {
         System.out.println(Integer.toHexString(name2.hashCode()));
         System.out.println(Integer.toHexString(name3.hashCode()));
         System.out.println(Integer.toHexString(name4.hashCode()));
-
     }
 }

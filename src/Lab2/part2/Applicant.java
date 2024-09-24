@@ -20,7 +20,7 @@ public class Applicant {
         return grades;
     }
 
-    public IllegalArgumentException getGradeFor(String course){
+    public CourseGrade getGradeFor (String course){
         int courseIndex;
 
         switch (course) {
@@ -43,7 +43,7 @@ public class Applicant {
                 courseIndex = 5;
                 break;
             default:
-                 return new IllegalArgumentException("Course not found: " + course);
+                 return null;
         }
 
         return grades.get(courseIndex);
