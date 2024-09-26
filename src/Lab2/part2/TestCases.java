@@ -1,11 +1,14 @@
 package Lab2.part2;
 
 import Lab2.part1.CourseGrade;
+import Lab2.part1.SimpleIf;
 import org.junit.jupiter.api.Test;
 //import part1.CourseGrade;
 
+import java.lang.reflect.Array;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
+import java.util.ArrayList;
 import java.util.stream.Collectors;
 import java.util.Arrays;
 import java.util.List;
@@ -28,7 +31,7 @@ public class TestCases {
          new CourseGrade("Operating Systems", 75),
          new CourseGrade("Non-CS", 83)
       );
-      Applicant testApplicant = new Applicant("Aakash", grades);
+      Applicant testApplicant = new Applicant("Aakash", grades,  new ArrayList<>(), new ArrayList<>());
       assertEquals("Aakash", testApplicant.getName());
    }
 
@@ -42,7 +45,7 @@ public class TestCases {
               new CourseGrade("Operating Systems", 84),
               new CourseGrade("Non-CS", 43)
       );
-      Applicant testApplicant = new Applicant("Victor", grades);
+      Applicant testApplicant = new Applicant("Victor", grades,  new ArrayList<>(), new ArrayList<>());
       assertEquals(grades, testApplicant.getGrades());
    }
 
@@ -56,7 +59,7 @@ public class TestCases {
               new CourseGrade("Operating Systems", 84),
               new CourseGrade("Non-CS", 43)
       );
-      Applicant testApplicant = new Applicant("Victor", grades);
+      Applicant testApplicant = new Applicant("Victor", grades,  new ArrayList<>(), new ArrayList<>());
       CourseGrade expected = grades.get(2);
       assertEquals(expected, testApplicant.getGradeFor("Algorithms"));
    }
@@ -71,7 +74,7 @@ public class TestCases {
               new CourseGrade("Operating Systems", 84),
               new CourseGrade("Non-CS", 43)
       );
-      Applicant testApplicant = new Applicant("Victor", grades);
+      Applicant testApplicant = new Applicant("Victor", grades,  new ArrayList<>(), new ArrayList<>());
       CourseGrade expected = grades.get(4);
       assertEquals(expected, testApplicant.getGradeFor("Operating Systems"));
    }
@@ -86,7 +89,7 @@ public class TestCases {
               new CourseGrade("Operating Systems", 84),
               new CourseGrade("Non-CS GPA", 43)
       );
-      Applicant testApplicant = new Applicant("Victor", grades);
+      Applicant testApplicant = new Applicant("Victor", grades, new ArrayList<>(), new ArrayList<>());
       CourseGrade expected = grades.get(5);
       assertEquals(expected, testApplicant.getGradeFor("Non-CS GPA"));
    }
@@ -101,7 +104,7 @@ public class TestCases {
               new CourseGrade("Operating Systems", 84),
               new CourseGrade("Non-CS GPA", 43)
       );
-      Applicant testApplicant = new Applicant("Victor", grades);
+      Applicant testApplicant = new Applicant("Victor", grades,  new ArrayList<>(), new ArrayList<>());
 
       String empty = null;
       assertEquals(empty, testApplicant.getGradeFor("Leadership"));
@@ -165,4 +168,6 @@ public class TestCases {
          assertEquals(expectedMethodReturns.get(i), method.getReturnType());
       }
    }
+
+
 }

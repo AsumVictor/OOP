@@ -5,10 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0204bcb9-1ebc-45c4-86df-d70cae7e6e8c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Lab2/part2/Job.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab2/part2/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Lab2/part2/SkillsUSed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab2/part1/SimpleIf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab2/part1/SimpleIf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab2/part1/SimpleLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab2/part1/SimpleLoop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab2/part1/TestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab2/part1/TestCases.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lab2/part2/Applicant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab2/part2/Applicant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lab2/part2/TestCases.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab2/part2/TestCases.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,12 +47,19 @@
     "Application.Lab01.executor": "Run",
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.TestCases.TestJobKeywordsMatchScore.executor": "Run",
     "JUnit.TestCases.executor": "Run",
+    "JUnit.TestCases.minWorkExpWeight2.executor": "Run",
+    "JUnit.TestCases.testJobKeywordsMatchScore.executor": "Run",
+    "JUnit.TestCases.testJobKeywordsMatchScore2.executor": "Run",
+    "JUnit.TestCases.testMatchJobRoleScore1.executor": "Run",
+    "JUnit.TestCases.testMatchJobRoleScore2.executor": "Run",
+    "JUnit.TestCases.testSkillMatchScore1.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/AiAsum/IdeaProjects/Lab1/src/Lab2/part2",
     "onboarding.tips.debug.path": "C:/Users/AiAsum/IdeaProjects/Lab1/src/Main.java"
@@ -63,17 +75,94 @@
       <recent name="C:\Users\AiAsum\IdeaProjects\Lab1\src" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Lab01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Lab01" />
+  <component name="RunManager" selected="JUnit.TestCases.testSkillMatchScore1">
+    <configuration name="TestCases.TestJobKeywordsMatchScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab2.part1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lab2.part1" />
+      <option name="MAIN_CLASS_NAME" value="Lab2.part1.TestCases" />
+      <option name="METHOD_NAME" value="TestJobKeywordsMatchScore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCases.testJobKeywordsMatchScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab2.part1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lab2.part1" />
+      <option name="MAIN_CLASS_NAME" value="Lab2.part1.TestCases" />
+      <option name="METHOD_NAME" value="testJobKeywordsMatchScore" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCases.testJobKeywordsMatchScore2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab2.part1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lab2.part1" />
+      <option name="MAIN_CLASS_NAME" value="Lab2.part1.TestCases" />
+      <option name="METHOD_NAME" value="testJobKeywordsMatchScore2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCases.testMatchJobRoleScore2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab2.part1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lab2.part1" />
+      <option name="MAIN_CLASS_NAME" value="Lab2.part1.TestCases" />
+      <option name="METHOD_NAME" value="testMatchJobRoleScore2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCases.testSkillMatchScore1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Lab1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Lab2.part1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Lab2.part1" />
+      <option name="MAIN_CLASS_NAME" value="Lab2.part1.TestCases" />
+      <option name="METHOD_NAME" value="testSkillMatchScore1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Lab01" />
+        <item itemvalue="JUnit.TestCases.testSkillMatchScore1" />
+        <item itemvalue="JUnit.TestCases.testJobKeywordsMatchScore2" />
+        <item itemvalue="JUnit.TestCases.testJobKeywordsMatchScore" />
+        <item itemvalue="JUnit.TestCases.TestJobKeywordsMatchScore" />
+        <item itemvalue="JUnit.TestCases.testMatchJobRoleScore2" />
       </list>
     </recent_temporary>
   </component>
@@ -96,14 +185,57 @@
           <line>11</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Lab2/part2/TestCases.java</url>
+          <line>147</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Lab2/part1/SimpleLoop.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Lab2/part1/SimpleIf.java</url>
+          <line>80</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Lab2/part1/TestCases.java</url>
+          <line>375</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Lab2/part1/TestCases.java</url>
+          <line>472</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Lab2/part2/TestCases.java</url>
-          <line>35</line>
+          <line>38</line>
           <properties class="Lab2.part2.TestCases" method="testGetGrades">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Lab2/part1/TestCases.java</url>
+          <line>263</line>
+          <properties class="Lab2.part1.TestCases" method="minWorkExpWeight2">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/Lab2/part1/SimpleLoop.java</url>
+          <line>133</line>
+          <properties class="Lab2.part1.SimpleLoop" method="skillMatchScore">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

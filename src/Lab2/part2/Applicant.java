@@ -2,14 +2,21 @@ package Lab2.part2;
 
 import Lab2.part1.CourseGrade;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Applicant {
     private String name;
     private List<CourseGrade> grades;
-    public Applicant(String name, List<CourseGrade> grades) {
-         this.name = name;
-         this.grades = grades;
+    private ArrayList<Project> projects;
+    private List<Job> workExperiences;
+
+
+    public Applicant(String name, List<CourseGrade> grades, ArrayList<Project> projects, List<Job> workExperiences ) {
+        this.name = name;
+        this.grades = grades;
+        this.projects = projects;
+        this.workExperiences = workExperiences;
     }
 
     public String getName() {
@@ -47,6 +54,14 @@ public class Applicant {
         }
 
         return grades.get(courseIndex);
+    }
+
+    public ArrayList<Project> getProjects() {
+        return projects;
+    }
+
+    public List<Job> getWorkExperiences(){
+        return workExperiences;
     }
 
 

@@ -2,6 +2,9 @@ package Lab2.part1;
 
 import java.util.*;
 
+import Lab2.part2.Job;
+import Lab2.part2.Project;
+import Lab2.part2.SkillsUSed;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -222,4 +225,327 @@ public class TestCases {
                       courseListsByStudent, 88)));
 
    }
+
+
+
+   ////////////////////////////////////////////////////////////
+   //      MY TEST FOR ADDITIONAL FUNCTIONALITY              //
+   ////////////////////////////////////////////////////////////
+
+   @Test
+   public void minWorkExpWeight1(){
+      List<Job> workExperience = new ArrayList<>(
+              Arrays.asList(
+                      new Job("front end Developer", "Build UI/UX interfaces and REST API integration with",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("React"),
+                                      new SkillsUSed("Javascript"),
+                                      new SkillsUSed("Figma")))
+                      ),
+
+                      new Job("front end Developer", "Write Test for React with Jest. Optimize the load time",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("React"),
+                                      new SkillsUSed("Javascript"),
+                                      new SkillsUSed("Figma"),
+                                      new SkillsUSed("Figma")))
+                      )
+
+              )
+      );
+
+      assertEquals(10, SimpleIf.minWorkExpWeight(workExperience));
+
+   }
+
+   @Test
+   public void minWorkExpWeight2(){
+      List<Job> workExperience = new ArrayList<>(
+              Arrays.asList(
+                      new Job("front end Developer", "Build UI/UX interfaces and REST API integration with",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("React"),
+                                      new SkillsUSed("Javascript"),
+                                      new SkillsUSed("Figma")))
+                      ),
+
+                      new Job("front end Developer", "Write Test for React with Jest. Optimize the load time",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("React"),
+                                      new SkillsUSed("Javascript"),
+                                      new SkillsUSed("Figma"),
+                                      new SkillsUSed("Figma")))
+                      ),
+                      new Job("Ashesi Peer coach", "Mentor 2+ students. Collaborate with team",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("leadership"),
+                                      new SkillsUSed("mentorship"),
+                                      new SkillsUSed("communication")
+                              )
+
+                              )
+
+                      )
+
+
+              )
+      );
+
+      assertEquals(15, SimpleIf.minWorkExpWeight(workExperience));
+
+   }
+
+   @Test
+   public void testMatchJobRoleScore1(){
+      List<Job> workExperience = new ArrayList<>(
+              Arrays.asList(
+                      new Job("front end Developer", "Build UI/UX interfaces and REST API integration with",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("React"),
+                                      new SkillsUSed("Javascript"),
+                                      new SkillsUSed("Figma")))
+                      ),
+
+                      new Job("front end Developer", "Write Test for React with Jest. Optimize the load time",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("React"),
+                                      new SkillsUSed("Javascript"),
+                                      new SkillsUSed("Figma"),
+                                      new SkillsUSed("Figma")))
+                      ),
+                      new Job("Ashesi Peer coach", "Mentor 2+ students. Collaborate with team",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("leadership"),
+                                      new SkillsUSed("mentorship"),
+                                      new SkillsUSed("communication")
+                              )
+
+                              )
+
+                      )
+
+
+              )
+      );
+
+      assertEquals(15, SimpleLoop.matchJobRoleScore(workExperience, "front end Developer"));
+   }
+
+   @Test
+   public void testMatchJobRoleScore2(){
+      List<Job> workExperience = new ArrayList<>(
+              Arrays.asList(
+
+                      new Job("front end Developer", "Write Test for React with Jest. Optimize the load time",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("React"),
+                                      new SkillsUSed("Javascript"),
+                                      new SkillsUSed("Figma"),
+                                      new SkillsUSed("Figma")))
+                      ),
+                      new Job("Ashesi Peer coach", "Mentor 2+ students. Collaborate with team",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("leadership"),
+                                      new SkillsUSed("mentorship"),
+                                      new SkillsUSed("communication")
+                              )
+
+                              )
+
+                      )
+
+
+              )
+      );
+
+      assertEquals(0, SimpleLoop.matchJobRoleScore(workExperience, "Fitness Trainer"));
+   }
+
+   @Test
+   public void testKeywordsMatchScore1(){
+      List<Job> workExperience = new ArrayList<>(
+              Arrays.asList(
+                      new Job("front end Developer", "Build UI/UX interfaces and REST API integration with",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("React"),
+                                      new SkillsUSed("Javascript"),
+                                      new SkillsUSed("Figma")))
+                      ),
+
+                      new Job("front end Developer", "Write Test for React with Jest. Optimize the load time",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("React"),
+                                      new SkillsUSed("Javascript"),
+                                      new SkillsUSed("Figma"),
+                                      new SkillsUSed("Figma")))
+                      ),
+                      new Job("Ashesi Peer coach", "Mentor 2+ students. Collaborate with team",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("leadership"),
+                                      new SkillsUSed("mentorship"),
+                                      new SkillsUSed("communication")
+                              )
+
+                              )
+
+                      )
+
+
+              )
+      );
+
+      assertEquals(0.7273, SimpleLoop.keywordMatchScore(workExperience,
+              new ArrayList<String>(Arrays.asList("UI/UX", "REST", "API", "TEST", "JEST", "OPTIMIZE", "TEAM", "COLLABORATE", "PAIR PROGRAMMING", "WORKLOAD", "SERVER"))
+              )
+
+      );
+
+
+
+   }
+
+   @Test
+   public void testKeywordsMatchScore2(){
+      List<Job> workExperience = new ArrayList<>(
+              Arrays.asList(
+                      new Job("front end Developer", "Build UI/UX interfaces and REST API integration with",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("React"),
+                                      new SkillsUSed("Javascript"),
+                                      new SkillsUSed("Figma")))
+                      ),
+
+                      new Job("front end Developer", "Write Test for React with Jest. Optimize the load time",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("React"),
+                                      new SkillsUSed("Javascript"),
+                                      new SkillsUSed("Figma"),
+                                      new SkillsUSed("Figma")))
+                      ),
+                      new Job("Ashesi Peer coach", "Mentor 2+ students. Collaborate with team",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("leadership"),
+                                      new SkillsUSed("mentorship"),
+                                      new SkillsUSed("communication")
+                              )
+
+                              )
+
+                      )
+
+
+              )
+      );
+
+      assertEquals(0.2857, SimpleLoop.keywordMatchScore(workExperience,
+                      new ArrayList<String>(Arrays.asList("UI/UX","HEALTH","STABLE", "UML", "LEARN", "TEST", "HOT", "OPTIMIZE", "TEAM", "LEAD","HIRING", "PROGRAMMING", "FITNESS", "SERVER"))
+              )
+
+      );
+
+
+
+   }
+
+   @Test
+   public void testKeywordsMatchScore3(){
+       ArrayList<Project> workExperience;
+       workExperience = new ArrayList<>(
+           Arrays.asList(
+                   new Project("Event Archieve", "Build event with Java and OOP concept. I pushed to github private and submitted for a review",
+                           new ArrayList<>(Arrays.asList(
+                                   new SkillsUSed("Java"),
+                                   new SkillsUSed("OOP"),
+                                   new SkillsUSed("Github"),
+                                   new SkillsUSed("review"),
+                                   new SkillsUSed("UML")
+
+                                   )
+                           )
+                   ),
+                   new Project("GPA Calculator", "Build a GPA calculator with Python. I collaborated and lead a team complete this project",
+                           new ArrayList<>(Arrays.asList(
+                                   new SkillsUSed("Java"),
+                                   new SkillsUSed("OOP"),
+                                   new SkillsUSed("Github"),
+                                   new SkillsUSed("review"),
+                                   new SkillsUSed("UML")
+
+                           )
+                           )
+                   )
+           )
+       );
+
+       assertEquals(0.5, SimpleLoop.keywordMatchScore(workExperience,
+                        new ArrayList<String>(Arrays.asList("PYTHON","BUILD","STABLE","REVIEW", "UML", "LEAD", "TEST","GITHUB", "TEACHING", "COLLABORATED", "OPTIMIZE", "TEAM","HIRING", "PROGRAMMING", "FITNESS", "OOP"))
+                )
+
+        );
+
+
+
+    }
+
+   @Test
+    public void testSkillMatchScore1(){
+             List<Job> workExperience = new ArrayList<>(
+                     Arrays.asList(
+
+                             new Job("front end Developer", "Write Test for React with Jest. Optimize the load time",
+                                     "Internship",
+                                     new ArrayList<>(Arrays.asList(
+                                             new SkillsUSed("React"),
+                                             new SkillsUSed("github"),
+                                             new SkillsUSed("Figma"),
+                                             new SkillsUSed("Java")))
+                             ),
+                             new Job("Ashesi Peer coach", "Mentor 2+ students. Collaborate with team",
+                                     "Internship",
+                                     new ArrayList<>(Arrays.asList(
+                                             new SkillsUSed("leadership"),
+                                             new SkillsUSed("mentorship"),
+                                             new SkillsUSed("communication")
+                                     )
+
+                                     )
+
+                             )
+
+
+                     )
+             );
+
+       assertEquals(0.2857, SimpleLoop.skillMatchScore(workExperience,
+             new ArrayList<>(Arrays.asList(
+                     "JAVA",
+                     "GITHUB",
+                     "SPRING BOOT",
+                     "LOGGING",
+                     "AZURE",
+                     "UML",
+                     "OOP"
+             ))
+     ));
+
+
+   }
+
+
 }
