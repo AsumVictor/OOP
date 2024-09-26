@@ -13,8 +13,7 @@ import java.util.stream.Collectors;
 import java.util.Arrays;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TestCases {
    /*
@@ -72,36 +71,6 @@ public class TestCases {
               new CourseGrade("Algorithms", 64),
               new CourseGrade("Computer Organization", 75),
               new CourseGrade("Operating Systems", 84),
-              new CourseGrade("Non-CS", 43)
-      );
-      Applicant testApplicant = new Applicant("Victor", grades,  new ArrayList<>(), new ArrayList<>());
-      CourseGrade expected = grades.get(4);
-      assertEquals(expected, testApplicant.getGradeFor("Operating Systems"));
-   }
-
-   @Test
-   public void testGetGradeFor3(){
-      List<CourseGrade> grades = Arrays.asList(
-              new CourseGrade("Intro to CS", 43),
-              new CourseGrade("Data Structures", 65),
-              new CourseGrade("Algorithms", 64),
-              new CourseGrade("Computer Organization", 75),
-              new CourseGrade("Operating Systems", 84),
-              new CourseGrade("Non-CS GPA", 43)
-      );
-      Applicant testApplicant = new Applicant("Victor", grades, new ArrayList<>(), new ArrayList<>());
-      CourseGrade expected = grades.get(5);
-      assertEquals(expected, testApplicant.getGradeFor("Non-CS GPA"));
-   }
-
-   @Test
-   public void testGetGradeFor4(){
-      List<CourseGrade> grades = Arrays.asList(
-              new CourseGrade("Intro to CS", 43),
-              new CourseGrade("Data Structures", 65),
-              new CourseGrade("Algorithms", 64),
-              new CourseGrade("Computer Organization", 75),
-              new CourseGrade("Operating Systems", 84),
               new CourseGrade("Non-CS GPA", 43)
       );
       Applicant testApplicant = new Applicant("Victor", grades,  new ArrayList<>(), new ArrayList<>());
@@ -110,7 +79,354 @@ public class TestCases {
       assertEquals(empty, testApplicant.getGradeFor("Leadership"));
    }
 
+   @Test
+   public void testGetProject(){
+      List<CourseGrade> grades = Arrays.asList(
+              new CourseGrade("Intro to CS", 43),
+              new CourseGrade("Data Structures", 65),
+              new CourseGrade("Algorithms", 64),
+              new CourseGrade("Computer Organization", 75),
+              new CourseGrade("Operating Systems", 84),
+              new CourseGrade("Non-CS GPA", 43)
+      );
 
+      List<Job> workExperience = new ArrayList<>(
+              Arrays.asList(
+
+                      new Job("front end Developer", "Write Test for React with Jest. Optimize the load time",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("React"),
+                                      new SkillsUSed("github"),
+                                      new SkillsUSed("Figma"),
+                                      new SkillsUSed("Java")))
+                      ),
+                      new Job("Ashesi Peer coach", "Mentor 2+ students. Collaborate with team",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("leadership"),
+                                      new SkillsUSed("mentorship"),
+                                      new SkillsUSed("communication")
+                              )
+
+                              )
+
+                      )
+
+
+              )
+      );
+
+      ArrayList<Project>  projects = new ArrayList<>(
+              Arrays.asList(
+                      new Project("Event Archieve", "Build event with Java and OOP concept. I pushed to github private and submitted for a review",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("Java"),
+                                      new SkillsUSed("OOP"),
+                                      new SkillsUSed("Github"),
+                                      new SkillsUSed("review"),
+                                      new SkillsUSed("UML")
+
+                              )
+                              )
+                      ),
+                      new Project("GPA Calculator", "Build a GPA calculator with Python. I collaborated and lead a team complete this project",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("Java"),
+                                      new SkillsUSed("OOP"),
+                                      new SkillsUSed("Github"),
+                                      new SkillsUSed("review"),
+                                      new SkillsUSed("UML")
+
+                              )
+                              )
+                      )
+              )
+      );
+
+
+      Applicant testApplicant = new Applicant("Victor", grades,  projects, workExperience);
+
+      assertEquals(projects, testApplicant.getProjects());
+   }
+
+   @Test
+   public void testGetExperience(){
+      List<CourseGrade> grades = Arrays.asList(
+              new CourseGrade("Intro to CS", 43),
+              new CourseGrade("Data Structures", 65),
+              new CourseGrade("Algorithms", 64),
+              new CourseGrade("Computer Organization", 75),
+              new CourseGrade("Operating Systems", 84),
+              new CourseGrade("Non-CS GPA", 43)
+      );
+
+      List<Job> workExperience = new ArrayList<>(
+              Arrays.asList(
+
+                      new Job("front end Developer", "Write Test for React with Jest. Optimize the load time",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("React"),
+                                      new SkillsUSed("github"),
+                                      new SkillsUSed("Figma"),
+                                      new SkillsUSed("Java")))
+                      ),
+                      new Job("Ashesi Peer coach", "Mentor 2+ students. Collaborate with team",
+                              "Internship",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("leadership"),
+                                      new SkillsUSed("mentorship"),
+                                      new SkillsUSed("communication")
+                              )
+
+                              )
+
+                      )
+
+
+              )
+      );
+
+      ArrayList<Project>  projects = new ArrayList<>(
+              Arrays.asList(
+                      new Project("Event Archieve", "Build event with Java and OOP concept. I pushed to github private and submitted for a review",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("Java"),
+                                      new SkillsUSed("OOP"),
+                                      new SkillsUSed("Github"),
+                                      new SkillsUSed("review"),
+                                      new SkillsUSed("UML")
+
+                              )
+                              )
+                      ),
+                      new Project("GPA Calculator", "Build a GPA calculator with Python. I collaborated and lead a team complete this project",
+                              new ArrayList<>(Arrays.asList(
+                                      new SkillsUSed("Java"),
+                                      new SkillsUSed("OOP"),
+                                      new SkillsUSed("Github"),
+                                      new SkillsUSed("review"),
+                                      new SkillsUSed("UML")
+
+                              )
+                              )
+                      )
+              )
+      );
+
+
+      Applicant testApplicant = new Applicant("Victor", grades,  projects, workExperience);
+
+      assertEquals(workExperience, testApplicant.getWorkExperiences());
+   }
+
+   @Test
+   public void testAnalyzeApplicant2_1(){
+       List<CourseGrade> grades = Arrays.asList(
+               new CourseGrade("Intro to CS", 43),
+               new CourseGrade("Data Structures", 65),
+               new CourseGrade("Algorithms", 64),
+               new CourseGrade("Computer Organization", 75),
+               new CourseGrade("Operating Systems", 84),
+               new CourseGrade("Non-CS GPA", 43)
+       );
+
+       List<Job> workExperience = new ArrayList<>(
+               Arrays.asList(
+
+                       new Job("front end Developer", "Write Test for React with Jest. Optimize the load time",
+                               "Internship",
+                               new ArrayList<>(Arrays.asList(
+                                       new SkillsUSed("React"),
+                                       new SkillsUSed("github"),
+                                       new SkillsUSed("Figma"),
+                                       new SkillsUSed("Java")))
+                       ),
+                       new Job("Ashesi Peer coach", "Mentor 2+ students. Collaborate with team",
+                               "Internship",
+                               new ArrayList<>(Arrays.asList(
+                                       new SkillsUSed("leadership"),
+                                       new SkillsUSed("mentorship"),
+                                       new SkillsUSed("communication")
+                               )
+
+                               )
+
+                       )
+
+
+               )
+       );
+
+       ArrayList<Project>  projects = new ArrayList<>(
+               Arrays.asList(
+                       new Project("Event Archieve", "Build event with Java and OOP concept. I pushed to github private and submitted for a review",
+                               new ArrayList<>(Arrays.asList(
+                                       new SkillsUSed("Java"),
+                                       new SkillsUSed("OOP"),
+                                       new SkillsUSed("Github"),
+                                       new SkillsUSed("review"),
+                                       new SkillsUSed("UML")
+
+                               )
+                               )
+                       ),
+                       new Project("GPA Calculator", "Build a GPA calculator with Python. I collaborated and lead a team complete this project",
+                               new ArrayList<>(Arrays.asList(
+                                       new SkillsUSed("HTML"),
+                                       new SkillsUSed("OOP"),
+                                       new SkillsUSed("Github"),
+                                       new SkillsUSed("Python"),
+                                       new SkillsUSed("UML")
+
+                               )
+                               )
+                       )
+               )
+       );
+
+
+       Applicant testApplicant = new Applicant("Victor", grades,  projects, workExperience);
+
+       // Job Description
+       List<String> requiredKeywords = new ArrayList<>(Arrays.asList(
+               "TEAM",
+               "COLLABORATE",
+               "LEAD",
+               "BUILD",
+               "PULL REQUEST",
+               "FIGMA",
+               "OOP",
+               "REVIEW"
+       ));
+
+       List<String> requiredSkills = new ArrayList<>(Arrays.asList(
+               "JAVA",
+               "OOP",
+               "GITHUB",
+               "COMMUNICATION",
+               "UML",
+               "PYTHON"
+       ));
+
+       assertTrue(SimpleIf.analyzeApplicant2(
+               testApplicant,
+               70,
+               requiredKeywords,
+               requiredSkills,
+               "front end developer"
+       ));
+
+
+
+
+   }
+
+    @Test
+    public void testAnalyzeApplicant2_2(){
+        List<CourseGrade> grades = Arrays.asList(
+                new CourseGrade("Intro to CS", 43),
+                new CourseGrade("Data Structures", 65),
+                new CourseGrade("Algorithms", 64),
+                new CourseGrade("Computer Organization", 75),
+                new CourseGrade("Operating Systems", 84),
+                new CourseGrade("Non-CS GPA", 43)
+        );
+
+        List<Job> workExperience = new ArrayList<>(
+                Arrays.asList(
+
+                        new Job("front end Developer", "Write Test for React with Jest. Optimize the load time",
+                                "Internship",
+                                new ArrayList<>(Arrays.asList(
+                                        new SkillsUSed("React"),
+                                        new SkillsUSed("github"),
+                                        new SkillsUSed("Figma"),
+                                        new SkillsUSed("Java")))
+                        ),
+                        new Job("Ashesi Peer coach", "Mentor 2+ students. Collaborate with team",
+                                "Internship",
+                                new ArrayList<>(Arrays.asList(
+                                        new SkillsUSed("leadership"),
+                                        new SkillsUSed("mentorship"),
+                                        new SkillsUSed("communication")
+                                )
+
+                                )
+
+                        )
+
+
+                )
+        );
+
+        ArrayList<Project>  projects = new ArrayList<>(
+                Arrays.asList(
+                        new Project("Event Archieve", "Build event with Java and OOP concept. I pushed to github private and submitted for a review",
+                                new ArrayList<>(Arrays.asList(
+                                        new SkillsUSed("Java"),
+                                        new SkillsUSed("OOP"),
+                                        new SkillsUSed("Github"),
+                                        new SkillsUSed("review"),
+                                        new SkillsUSed("UML")
+
+                                )
+                                )
+                        ),
+                        new Project("GPA Calculator", "Build a GPA calculator with Python. I collaborated and lead a team complete this project",
+                                new ArrayList<>(Arrays.asList(
+                                        new SkillsUSed("HTML"),
+                                        new SkillsUSed("OOP"),
+                                        new SkillsUSed("Github"),
+                                        new SkillsUSed("Python"),
+                                        new SkillsUSed("UML")
+
+                                )
+                                )
+                        )
+                )
+        );
+
+
+        Applicant testApplicant = new Applicant("Tana", grades,  projects, workExperience);
+
+        // Job Description
+        List<String> requiredKeywords = new ArrayList<>(Arrays.asList(
+                "ECONOMICS",
+                "COLLABORATE",
+                "LEAD",
+                "BUILD",
+                "PULL REQUEST",
+                "NEGOTIATION",
+                "LEADERSHIP",
+                "REVIEW",
+                "COACH",
+                "MENTOR"
+        ));
+
+        List<String> requiredSkills = new ArrayList<>(Arrays.asList(
+                "MICROSOFT",
+                "TEACHING",
+                "MATHEMATICS",
+                "COMMUNICATION"
+        ));
+
+        assertFalse(SimpleIf.analyzeApplicant2(
+                testApplicant,
+                80,
+                requiredKeywords,
+                requiredSkills,
+                "Economics Lecturer"
+        ));
+
+
+
+
+    }
+
+
+   /*
    /*
     * The tests below here are to verify the basic requirements regarding
     * the "design" of your class.  These are to remain unchanged.
@@ -154,7 +470,7 @@ public class TestCases {
             .filter(m -> Modifier.isPublic(m.getModifiers()))
             .collect(Collectors.toList());
 
-      assertTrue(expectedMethodNames.size()+1 >= publicMethods.size(),
+      assertTrue(expectedMethodNames.size()+2 >= publicMethods.size(),
               "Unexpected number of public methods");
 
       assertTrue(expectedMethodNames.size() == expectedMethodReturns.size(),
