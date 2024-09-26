@@ -33,12 +33,12 @@ public class SimpleLoop {
 
   // MY OWN METHODS
   /**
-   * Computes the sum of integers between low and high (inclusive). Yes, this can
-   * be done without a loop, but the point is to practice the syntax for a loop.
+   * This method takes the applicants work history/experience and match if the application has done a job related to the current open job title
    *
-   * @param workExps
-   * * @param JobRole
-   * @return An integer that is the score/weight of how the applicants prevoius experience match the job title
+   *
+   * @param workExps Work history/experience of the applicant
+   * @param JobRole The open role the company is looking for.
+   * @return return an integer which is the score based on whether the applicant has had a similar role in their past years
    */
 
   public static int matchJobRoleScore(List<Job> workExps, String JobRole){
@@ -51,13 +51,13 @@ public class SimpleLoop {
      return 0;
   }
 
+
   /**
-   * Computes the sum of integers between low and high (inclusive). Yes, this can
-   * be done without a loop, but the point is to practice the syntax for a loop.
+   * It checks how the keywords in the applicants projects and work experience relate to the open job role and generate a score
    *
-   * @param workExps
-   * * @param JobRole
-   * @return An integer that is the score/weight of how the applicants prevoius experience match the job title
+   * @param workExps The work Experience of the applicant
+   * * @param List of open job required keywords
+   * @return A double that is the score of how the application keywords relates to the role keywords
    */
   public static double keywordMatchScore(List<Job> workExps, List<String> jobKeywords){
     HashSet<String> keywords = new HashSet<>();
@@ -86,16 +86,6 @@ public class SimpleLoop {
     return Double.parseDouble(formatter.format(applicantScore));
   }
 
-  /**
-   * Computes the sum of integers between low and high (inclusive). Yes, this can
-   * be done without a loop, but the point is to practice the syntax for a loop.
-   *
-   * @param
-   * * @param JobRole
-   * @return An integer that is the score/weight of how the applicants prevoius experience match the job title
-   */
-
-  // Overloading
   public static double keywordMatchScore(ArrayList<Project> projects, List<String> jobKeywords){
     HashSet<String> keywords = new HashSet<>();
     keywords.addAll(jobKeywords);
@@ -124,12 +114,11 @@ public class SimpleLoop {
   }
 
   /**
-   * Computes the sum of integers between low and high (inclusive). Yes, this can
-   * be done without a loop, but the point is to practice the syntax for a loop.
+   * It generates a score how based how the applicants has the required skills specified in the job. It compares the skills compared to the required skills
    *
-   * @param
-   * * @param JobRole
-   * @return An integer that is the score/weight of how the applicants prevoius experience match the job title
+   * @param workExperiences The work Experience of the applicant
+   * @param jobSkillsReqired List of skills required for the job
+   * @return A double that is the score of how the application skills relates to the role keywords
    */
   public static double skillMatchScore(List<Job> workExperiences, List<String> jobSkillsReqired){
     HashSet<String> requireSkills = new HashSet<>();

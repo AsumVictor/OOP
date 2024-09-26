@@ -465,8 +465,7 @@ public class TestCases {
 
    @Test
    public void testKeywordsMatchScore3(){
-       ArrayList<Project> workExperience;
-       workExperience = new ArrayList<>(
+       ArrayList<Project>  workExperience = new ArrayList<>(
            Arrays.asList(
                    new Project("Event Archieve", "Build event with Java and OOP concept. I pushed to github private and submitted for a review",
                            new ArrayList<>(Arrays.asList(
@@ -546,6 +545,5 @@ public class TestCases {
 
 
    }
-
 
 }

@@ -19,6 +19,15 @@ public class Applicant {
         this.workExperiences = workExperiences;
     }
 
+    public ArrayList<Project> getProjects() {
+        return projects;
+    }
+
+    public List<Job> getWorkExperiences(){
+        return workExperiences;
+    }
+
+
     public String getName() {
         return name;
     }
@@ -56,13 +65,6 @@ public class Applicant {
         return grades.get(courseIndex);
     }
 
-    public ArrayList<Project> getProjects() {
-        return projects;
-    }
-
-    public List<Job> getWorkExperiences(){
-        return workExperiences;
-    }
 
 
 }

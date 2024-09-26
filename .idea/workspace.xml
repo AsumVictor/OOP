@@ -5,9 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0204bcb9-1ebc-45c4-86df-d70cae7e6e8c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Lab2/part2/Job.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab2/part2/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lab2/part2/SkillsUSed.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lab2/part1/SimpleIf.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab2/part1/SimpleIf.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lab2/part1/SimpleLoop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab2/part1/SimpleLoop.java" afterDir="false" />
@@ -59,7 +56,7 @@
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "ft-fix",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/AiAsum/IdeaProjects/Lab1/src/Lab2/part2",
     "onboarding.tips.debug.path": "C:/Users/AiAsum/IdeaProjects/Lab1/src/Main.java"
@@ -75,7 +72,7 @@
       <recent name="C:\Users\AiAsum\IdeaProjects\Lab1\src" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestCases.testSkillMatchScore1">
+  <component name="RunManager">
     <configuration name="TestCases.TestJobKeywordsMatchScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Lab1" />
       <extension name="coverage">
@@ -187,7 +184,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Lab2/part2/TestCases.java</url>
-          <line>147</line>
+          <line>463</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -197,7 +194,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Lab2/part1/SimpleIf.java</url>
-          <line>80</line>
+          <line>94</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -207,12 +204,22 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Lab2/part1/TestCases.java</url>
-          <line>472</line>
+          <line>471</line>
           <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Lab2/part2/TestCases.java</url>
+          <line>435</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Lab2/part1/SimpleLoop.java</url>
+          <line>146</line>
+          <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Lab2/part2/TestCases.java</url>
-          <line>38</line>
+          <line>37</line>
           <properties class="Lab2.part2.TestCases" method="testGetGrades">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
@@ -230,7 +237,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/Lab2/part1/SimpleLoop.java</url>
-          <line>133</line>
+          <line>122</line>
           <properties class="Lab2.part1.SimpleLoop" method="skillMatchScore">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
